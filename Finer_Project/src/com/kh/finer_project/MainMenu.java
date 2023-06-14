@@ -7,6 +7,7 @@ public class MainMenu {
 		MainMenu main = new MainMenu();
 		
 		
+		//010-6471-7247입니다. 계좌번호 보내주세요
 	}
 
 }
