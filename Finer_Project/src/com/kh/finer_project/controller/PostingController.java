@@ -1,4 +1,6 @@
-package com.kh.finer_project;
+package com.kh.finer_project.controller;
+
+import com.kh.finer_project.model.Posting;
 
 public class PostingController extends Posting {
 
