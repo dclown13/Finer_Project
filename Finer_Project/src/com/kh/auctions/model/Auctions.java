@@ -1,4 +1,4 @@
-package com.kh.finer_project.model;
+package com.kh.auctions.model;
 
 import java.util.Date;
 

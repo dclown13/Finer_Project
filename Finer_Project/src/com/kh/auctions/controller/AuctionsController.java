@@ -1,8 +1,8 @@
-package com.kh.auctions.model;
+package com.kh.auctions.controller;
 
 import java.util.Date;
 
-import com.kh.finer_project.model.Auctions;
+import com.kh.auctions.model.Auctions;
 
 public class AuctionsController implements AuctionsInterface {
 	
