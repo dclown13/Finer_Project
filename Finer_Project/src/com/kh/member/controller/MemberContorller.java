@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import com.kh.member.model.Member;
-import com.kh.member.model.MemberInterface;
 
 public class MemberContorller implements MemberInterface{
 	private ArrayList<Member> list = new ArrayList<Member>();

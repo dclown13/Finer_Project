@@ -1,7 +1,9 @@
-package com.kh.member.model;
+package com.kh.member.controller;
 
 import java.util.ArrayList;
 import java.util.Date;
+
+import com.kh.member.model.Member;
 
 public interface MemberInterface {
 	
