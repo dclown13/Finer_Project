@@ -1,6 +1,6 @@
-package com.kh.AdminMenu.Controller; // 06-16 강원구 작성, void는 차후 수정 예정
+package com.kh.adminmenu.controller; // 06-16 강원구 작성, void는 차후 수정 예정
 
-import com.kh.AdminMenu.model.AdminMenu;
+import com.kh.adminmenu.model.AdminMenu;
 
 public class AdminMenuController {
 	

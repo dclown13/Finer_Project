@@ -1,4 +1,4 @@
-package com.kh.AdminMenu.model; // 06-16 강원구 작성
+package com.kh.adminmenu.model; // 06-16 강원구 작성
 
 import java.util.Objects;
 

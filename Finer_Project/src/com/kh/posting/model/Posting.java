@@ -1,4 +1,4 @@
-package com.kh.finer_project.model;
+package com.kh.posting.model;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Posting {
 
 	public Posting() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Posting(String post, String change, String list, boolean delete, String calldibs) {
