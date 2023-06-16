@@ -11,11 +11,13 @@ public class Auctions {
 	private String pw;//비밀번호
 	private String nick;//닉네임
 	private String address;//사용자 주소
+	private int Point; // 경매 성공하면 등급별로 포인트 적립
 	public Auctions() {
-	
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	public Auctions(String itemName, int itemPrice, int price, Date date, String id, String pw, String nick,
-			String address) {
+			String address, int point) {
 		super();
 		this.itemName = itemName;
 		this.itemPrice = itemPrice;
@@ -25,6 +27,7 @@ public class Auctions {
 		this.pw = pw;
 		this.nick = nick;
 		this.address = address;
+		Point = point;
 	}
 	public String getItemName() {
 		return itemName;
@@ -74,12 +77,18 @@ public class Auctions {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	public int getPoint() {
+		return Point;
+	}
+	public void setPoint(int point) {
+		Point = point;
+	}
 	@Override
 	public String toString() {
 		return "Auctions [itemName=" + itemName + ", itemPrice=" + itemPrice + ", price=" + price + ", date=" + date
-				+ ", id=" + id + ", pw=" + pw + ", nick=" + nick + ", address=" + address + "]";
+				+ ", id=" + id + ", pw=" + pw + ", nick=" + nick + ", address=" + address + ", Point=" + Point + "]";
 	}
-	
+
 	
 	
 	

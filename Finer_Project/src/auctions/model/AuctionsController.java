@@ -42,4 +42,11 @@ public class AuctionsController implements AuctionsInterface {
 		return null;
 	}
 
+	@Override
+	public boolean Point(int point) {
+		// 경매 낙찰 시 등급별로 포인트 적립
+		return false;
+	}
+
+	
 }
