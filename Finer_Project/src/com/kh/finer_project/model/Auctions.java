@@ -3,18 +3,22 @@ package com.kh.finer_project.model;
 import java.util.Date;
 
 public class Auctions {
-	private String itemName;
-	private int price;
-	private Date date;
-	private String id;
-	private String pw;
-	private String nick;
-	private String address;
+	private String itemName; //물건
+	private int itemPrice;// 물건 가격
+	private int price;//가격
+	private Date date;//경매일
+	private String id;//아이디
+	private String pw;//비밀번호
+	private String nick;//닉네임
+	private String address;//사용자 주소
 	public Auctions() {
+	
 	}
-	public Auctions(String itemName, int price, Date date, String id, String pw, String nick, String address) {
+	public Auctions(String itemName, int itemPrice, int price, Date date, String id, String pw, String nick,
+			String address) {
 		super();
 		this.itemName = itemName;
+		this.itemPrice = itemPrice;
 		this.price = price;
 		this.date = date;
 		this.id = id;
@@ -27,6 +31,12 @@ public class Auctions {
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+	public int getItemPrice() {
+		return itemPrice;
+	}
+	public void setItemPrice(int itemPrice) {
+		this.itemPrice = itemPrice;
 	}
 	public int getPrice() {
 		return price;
@@ -66,8 +76,8 @@ public class Auctions {
 	}
 	@Override
 	public String toString() {
-		return "Auctions [itemName=" + itemName + ", price=" + price + ", date=" + date + ", id=" + id + ", pw=" + pw
-				+ ", nick=" + nick + ", address=" + address + "]";
+		return "Auctions [itemName=" + itemName + ", itemPrice=" + itemPrice + ", price=" + price + ", date=" + date
+				+ ", id=" + id + ", pw=" + pw + ", nick=" + nick + ", address=" + address + "]";
 	}
 	
 	

@@ -1,10 +1,10 @@
 package com.kh.member.controller;
 
-import com.kh.finer_project.model.Members;
+import com.kh.member.model.Member;
 
 public class MemberContorller {
 
-	private Members m = new Members();
+	private Member m = new Member();
 	
 	public void singUp() {
 		
