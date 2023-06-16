@@ -10,40 +10,7 @@ public class Application {
 		
 	}
 	
-	public void singUp() {
-		
-	}
-	public void login() {
-		
-	}
 	
-	public void itemName() {
-		
-		
-	}
-
-
-	public void date() {
-		
-		
-	}
-	
-	public void nick() {
-		
-		
-	}
-
-	
-	public void address() {
-		
-		
-	}
-
-	
-	public void price() {
-		
-		
-	}
 	
 	
 }
