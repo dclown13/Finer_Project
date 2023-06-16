@@ -4,22 +4,22 @@ import java.sql.Date;
 
 public class Member {
 	
-	private String name;
-	private String id;
-	private String passward;
-	private String nick;
-	private String Introduction;
-	private String Rank;
-	private String address;
-	private Date singupDate;
-	private int age;
-	private char gender;
+	private String name; //이름
+	private String id; // 아이디
+	private String pw; // 비밀번호
+	private String nick; // 닉네임
+	private String Introduction; // 자기소개
+	private String Rank; // 등급
+	private String address; // 주소
+	private Date singupDate; // 가입 시간
+	private int age; // 나이
+	private char gender; // 성별 
 	public Member() {}
 	public Member(String name, String id, String passward, String nick, String introduction, String rank,
 			String address, Date singupDate, int age, char gender) {
 		this.name = name;
 		this.id = id;
-		this.passward = passward;
+		this.pw = passward;
 		this.nick = nick;
 		Introduction = introduction;
 		Rank = rank;
@@ -41,10 +41,10 @@ public class Member {
 		this.id = id;
 	}
 	public String getPassward() {
-		return passward;
+		return pw;
 	}
 	public void setPassward(String passward) {
-		this.passward = passward;
+		this.pw = passward;
 	}
 	public String getNick() {
 		return nick;
@@ -90,7 +90,7 @@ public class Member {
 	}
 	@Override
 	public String toString() {
-		return "Member [name=" + name + ", id=" + id + ", passward=" + passward + ", nick=" + nick + ", Introduction="
+		return "Member [name=" + name + ", id=" + id + ", passward=" + pw + ", nick=" + nick + ", Introduction="
 				+ Introduction + ", Rank=" + Rank + ", address=" + address + ", singupDate=" + singupDate + ", age="
 				+ age + ", gender=" + gender + "]";
 	}
