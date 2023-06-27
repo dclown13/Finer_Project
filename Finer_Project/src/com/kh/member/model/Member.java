@@ -21,8 +21,8 @@ public class Member {
 		this.id = id;
 		this.pw = passward;
 		this.nick = nick;
-		Introduction = introduction;
-		Rank = rank;
+		this.Introduction = introduction;
+		this.Rank = rank;
 		this.address = address;
 		this.singupDate = singupDate;
 		this.age = age;

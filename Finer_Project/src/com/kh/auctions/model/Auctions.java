@@ -27,7 +27,7 @@ public class Auctions {
 		this.pw = pw;
 		this.nick = nick;
 		this.address = address;
-		Point = point;
+		this.Point = point;
 	}
 	public String getItemName() {
 		return itemName;

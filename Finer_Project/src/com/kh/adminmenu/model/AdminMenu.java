@@ -10,8 +10,8 @@ public class AdminMenu {
 	
 	public AdminMenu() {}
 	public AdminMenu(String admId, String admPw, int memlevel) {
-		AdmId = admId;
-		AdmPw = admPw;
+		this.AdmId = admId;
+		this.AdmPw = admPw;
 		this.memlevel = memlevel;
 	}
 	public String getAdmId() {
