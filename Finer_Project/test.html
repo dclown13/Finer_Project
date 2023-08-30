@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="edit_profile_title">
+      <div class="inbox">
+        <h2 class="page-title">내 정보 관리</h2>
+      </div>
+    </section>
+    <section id="edit_progile_navigation">
+      <div class="inbox">
+        <nav class="edit-profile-nav">
+          <ul>
+            <li
+              class="edit-profile-li on"
+              data-type="common"
+              onclick="nav_selector($(this));"
+            >
+              내 정보 수정
+            </li>
+            <li
+              class="edit-profile-li"
+              data-type="password"
+              onclick="nav_selector($(this));"
+            >
+              비밀번호 변경
+            </li>
+            <li
+              class="edit-profile-li"
+              data-type="remove"
+              onclick="nav_selector($(this));"
+            >
+              회원탈퇴
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="edit_profile_container">
+      <div class="inbox">
+        <!-- 이메일 등록 변경 -->
+        <div class="edit-profile-div edit-profile-common on">
+          <div class="edit-profile-cont-wrap">
+            <div class="edit-profile-input-wrap">
+              <label for="edit_name">이름</label>
+              <input
+                type="text"
+                name="name"
+                class="edit-input"
+                id="edit_name"
+                placeholder="이름을 입력하세요."
+                value="강원구"
+              />
+              <span class="member-input-validate-text"></span>
+            </div>
+            <div class="edit-profile-input-wrap">
+              <label for="edit_email">이메일</label>
+              <input
+                type="password"
+                autocomplete="new-password"
+                style="width: 0px; height: 0px; border: 0"
+              />
+              <input
+                type="email"
+                name="email"
+                class="edit-input"
+                id="edit_email"
+                placeholder="등록 혹은 변경할 이메일 주소를 입력하세요."
+                value="shlwp777@naver.com"
+                autocomplete="off"
+              />
+              <span class="member-input-validate-text"></span>
+            </div>
+            <div class="edit-profile-input-wrap">
+              <label for="edit_phone">휴대폰 번호</label>
+              <div class="edit-input default">
+                <span>01096341368</span>
+                <button
+                  class="edit_phone_button"
+                  onclick="loadModal('phone_number_verification', 414);"
+                >
+                  변경
+                </button>
+              </div>
+              <span class="member-input-validate-text"></span>
+            </div>
+            <div class="edit-profile-input-wrap switch_wrap">
+              <span>마케팅 정보 수신 동의</span>
+              <label class="switch">
+                <input type="checkbox" id="m_agree" name="m_agree" value="1" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <button
+              class="edit-profile-btn edit-profile-btn-right"
+              onclick="editMemberInfo();"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+        <!-- 비밀번호 변경 -->
+        <div class="edit-profile-div edit-profile-password">
+          <div class="edit-profile-cont-wrap">
+            <div class="edit-profile-input-wrap">
+              <label for="cur_password">현재 비밀번호</label>
+              <input
+                type="password"
+                name="cur_password"
+                class="edit-input"
+                id="cur_password"
+                placeholder="현재 사용 중인 비밀번호를 입력하세요."
+              />
+              <span class="member-input-validate-text"></span>
+            </div>
+            <div class="edit-profile-input-wrap">
+              <label for="edit_password">비밀번호 변경</label>
+              <input
+                type="password"
+                name="edit_password"
+                class="edit-input"
+                id="edit_password"
+                placeholder="변경할 비밀번호를 입력하세요."
+              />
+              <span class="member-input-validate-text"></span>
+            </div>
+            <div class="edit-profile-input-wrap">
+              <label for="cur_password">비밀번호 변경 확인</label>
+              <input
+                type="password"
+                name="edit_password_check"
+                class="edit-input"
+                id="edit_password_check"
+                placeholder="변경할 비밀번호 확인을 위해 다시 입력하세요."
+              />
+              <span class="member-input-validate-text"></span>
+            </div>
+            <button
+              class="edit-profile-btn edit-profile-btn-right"
+              onclick="editMemberPassword();"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+        <!-- 회원탈퇴 -->
+        <div class="edit-profile-div edit-profile-remove">
+          <div class="edit-profile-cont-wrap">
+            <div class="edit-profile-input-wrap">
+              <p class="edit-profile-text edit-profile-remove-quest">
+                정말 탈퇴하시겠어요?
+              </p>
+              <p class="edit-profile-text">
+                경매마당에서 탈퇴하면 즉시 해당 계정의 모든 정보가 삭제되며 다시
+                복구할 수 없습니다. 경매마당에서 탈퇴하시겠습니까?
+              </p>
+            </div>
+            <button class="edit-profile-btn-half" onclick="history.back();">
+              취소
+            </button>
+            <form name="ri" id="ri" method="post" style="display: initial">
+              <input
+                type="hidden"
+                name="member_token"
+                value="5da3c37057f9dff678cab16385b2ca61"
+              />
+              <input
+                type="submit"
+                class="edit-profile-btn-half edit-profile-btn-right"
+                onclick="remove_id();"
+                value="확인"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
